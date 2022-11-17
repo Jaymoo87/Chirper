@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ReactDOM } from 'react';
 
 
 const Chirp = props => {
+
+    
     return(
-      <><form action=""></form></> // <input value={chirp} onChange={handleChirpInput} />
+      
+      <div>
+        <p className="card">{props.chirpText}</p>
+      </div>
     );
 }
 
