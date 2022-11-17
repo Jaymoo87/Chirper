@@ -3,9 +3,8 @@ import { ReactDOM } from 'react';
 import Chirp from './components/Chirp';
 import { v4 as uuidv4 } from 'uuid';
 import moment from 'moment'
-import { TfiQuoteLeft } from 'react-icons/tfi'
-import { TfiQuoteRight } from 'react-icons/tfi'
 import { RiChatFollowUpFill  } from 'react-icons/ri'
+
 
 
 
@@ -43,7 +42,7 @@ const App = () => {
         setUsername(e.target.value)
     }
     const handleButtonClick = e => {
-        let button = document.getElementById('chirpButton')
+        
         if (message === "" || username === "") {
            alert('Missing some Input')
            e.preventDefault()
@@ -62,7 +61,7 @@ const App = () => {
             <form className="rounded shadow-lg bg-primary ">
                 <div className="d-flex justify-content-start">
                     <label className="btn btn-info m-3 disabled">Chirper Username $8.00</label>
-                </div>
+                </div> 
                 <input className= "form-control p-4 mb-4" placeholder="Username Here" value={username} onChange={handleUserInput} />
                 <textarea  className= "form-control bg-light p-3 text-muted" placeholder="Chirp Here" value={message} onChange={handleChirpInput} />
                 <div className="d-flex justify-content-end">
