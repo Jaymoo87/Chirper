@@ -3,7 +3,9 @@ import { ReactDOM } from 'react';
 import Chirp from './components/Chirp';
 import { v4 as uuidv4 } from 'uuid';
 import moment from 'moment'
-import { GrBlockQuote } from 'react-icons/gr'
+import { TfiQuoteLeft } from 'react-icons/tfi'
+import { TfiQuoteRight } from 'react-icons/tfi'
+import { RiChatFollowUpFill  } from 'react-icons/ri'
 
 
 
@@ -80,7 +82,7 @@ const App = () => {
                             <p className=" m-5 card-text ">{chirp.message}</p>
                             <div className= 'd-flex justify-content-between mx-2'>
                             <h6 className=" text-muted d-flex card-text fst-italic">{moment().format('LLLL')} </h6>
-                            <h6 className=" text-muted d-flex card-text fst-italic">{"---"}{chirp.username}{"--->"}</h6>
+                            <h6 className=" text-muted d-flex card-text fst-italic">{"---"}{chirp.username}{"---"}<RiChatFollowUpFill /></h6>
                             </div>
                     </div>
               </div>
